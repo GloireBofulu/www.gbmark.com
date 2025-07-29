@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Même head que index.html -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+      <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <!-- Même header que index.html -->
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Contactez GB Mark</h1>
+            <p>Nous sommes à votre disposition pour répondre à toutes vos questions</p>
+        </div>
+    </section>
+
+    <section class="contact-content">
+        <div class="container">
+            <div class="contact-info">
+                <h2>Nos Coordonnées</h2>
+                <div class="info-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Adresse</h3>
+                    <p>123 Avenue des Automobiles<br>Kinshasa, RD Congo</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Téléphone</h3>
+                    <p>+243 844 245 180</p>
+                    <p>Service client: 8h-18h (Lun-Sam)</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>contact@gbmark.com</p>
+                    <p>Service pièces: pieces@gbmark.com</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Horaires</h3>
+                    <p>Lundi - Vendredi: 8h00 - 18h00</p>
+                    <p>Samedi: 9h00 - 15h00</p>
+                    <p>Dimanche: Fermé</p>
+                </div>
+            </div>
+
+            <div class="contact-form-container">
+                <div class="form-tabs">
+                    <button class="tab-btn active" data-tab="contact-tab">Formulaire de Contact</button>
+                    <button class="tab-btn" data-tab="rdv-tab">Prendre Rendez-vous</button>
+                    <button class="tab-btn" data-tab="demande-tab">Demande Spéciale</button>
+                </div>
+
+                <div class="tab-content active" id="contact-tab">
+                    <h2>Envoyez-nous un message</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="contactName">Nom complet*</label>
+                            <input type="text" id="contactName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail">Email*</label>
+                            <input type="email" id="contactEmail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactPhone">Téléphone</label>
+                            <input type="tel" id="contactPhone">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactSubject">Sujet*</label>
+                            <select id="contactSubject" required>
+                                <option value="">Sélectionnez un sujet</option>
+                                <option value="vehicule">Demande sur un véhicule</option>
+                                <option value="piece">Demande sur une pièce</option>
+                                <option value="service">Question sur nos services</option>
+                                <option value="autre">Autre demande</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage">Message*</label>
+                            <textarea id="contactMessage" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Envoyer le message</button>
+                    </form>
+                </div>
+
+                <div class="tab-content" id="rdv-tab">
+                    <h2>Planifier un rendez-vous</h2>
+                    <form id="appointmentForm">
+                        <div class="form-group">
+                            <label for="appointmentName">Nom complet*</label>
+                            <input type="text" id="appointmentName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="appointmentEmail">Email*</label>
+                            <input type="email" id="appointmentEmail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="appointmentPhone">Téléphone*</label>
+                            <input type="tel" id="appointmentPhone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="appointmentType">Type de rendez-vous*</label>
+                            <select id="appointmentType" required>
+                                <option value="">Sélectionnez un type</option>
+                                <option value="showroom">Visite du showroom</option>
+                                <option value="test-drive">Essai routier</option>
+                                <option value="consultation">Consultation véhicule</option>
+                                <option value="piece">Consultation pièces</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="appointmentDate">Date souhaitée*</label>
+                            <input type="text" id="appointmentDate" class="datepicker" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="appointmentTime">Heure souhaitée*</label>
+                            <select id="appointmentTime" required>
+                                <option value="">Sélectionnez une heure</option>
+                                <option value="08:00">08:00</option>
+                                <option value="09:00">09:00</option>
+                                <option value="10:00">10:00</option>
+                                <option value="11:00">11:00</option>
+                                <option value="12:00">12:00</option>
+                                <option value="13:00">13:00</option>
+                                <option value="14:00">14:00</option>
+                                <option value="15:00">15:00</option>
+                                <option value="16:00">16:00</option>
+                                <option value="17:00">17:00</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="appointmentMessage">Informations supplémentaires</label>
+                            <textarea id="appointmentMessage" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn">Confirmer le rendez-vous</button>
+                    </form>
+                </div>
+
+                <div class="tab-content" id="demande-tab">
+                    <h2>Demande spéciale</h2>
+                    <p>Utilisez ce formulaire pour des demandes spécifiques (véhicule particulier, pièce rare, import spécial, etc.)</p>
+                    <form id="specialRequestForm">
+                        <div class="form-group">
+                            <label for="requestName">Nom complet*</label>
+                            <input type="text" id="requestName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="requestEmail">Email*</label>
+                            <input type="email" id="requestEmail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="requestPhone">Téléphone*</label>
+                            <input type="tel" id="requestPhone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="requestType">Type de demande*</label>
+                            <select id="requestType" required>
+                                <option value="">Sélectionnez un type</option>
+                                <option value="vehicule-specifique">Véhicule spécifique</option>
+                                <option value="piece-rare">Pièce rare/difficile à trouver</option>
+                                <option value="import">Demande d'import spécial</option>
+                                <option value="flotte">Achat de flotte</option>
+                                <option value="autre">Autre demande</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="requestDetails">Détails de votre demande*</label>
+                            <textarea id="requestDetails" rows="5" required placeholder="Décrivez le plus précisément possible ce que vous recherchez (marque, modèle, année, spécifications, etc.)"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="requestDeadline">Délai souhaité (optionnel)</label>
+                            <input type="text" id="requestDeadline" class="datepicker">
+                        </div>
+                        <div class="form-group">
+                            <label for="requestBudget">Budget approximatif (optionnel)</label>
+                            <input type="text" id="requestBudget" placeholder="En USD">
+                        </div>
+                        <button type="submit" class="btn">Envoyer la demande</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-map">
+        <div class="container">
+            <h2>Nous Trouver</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.123456789012!2d15.123456789012345!3d-4.123456789012345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNMKwMDcnMjQuNCJTIDE1wrAwNyc0MS4wIkU!5e0!3m2!1sfr!2scd!4v1234567890123!5m2!1sfr!2scd" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-departments">
+        <div class="container">
+            <h2>Nos Départements</h2>
+            <div class="departments-grid">
+                <div class="department-card">
+                    <i class="fas fa-car"></i>
+                    <h3>Ventes de Véhicules</h3>
+                    <p>email: ventes@gbmark.com</p>
+                    <p>tél: +243 844 245 180</p>
+                </div>
+                <div class="department-card">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Pièces Détachées</h3>
+                    <p>email: pieces@gbmark.com</p>
+                    <p>tél: +243 844 245 181</p>
+                </div>
+                <div class="department-card">
+                    <i class="fas fa-globe"></i>
+                    <h3>Import-Export</h3>
+                    <p>email: import@gbmark.com</p>
+                    <p>tél: +243 844 245 182</p>
+                </div>
+                <div class="department-card">
+                    <i class="fas fa-headset"></i>
+                    <h3>Service Client</h3>
+                    <p>email: client@gbmark.com</p>
+                    <p>tél: +243 844 245 183</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <!-- Même footer que index.html -->
+    </footer>
+
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <i class="fas fa-check-circle success-icon"></i>
+                <h3>Message envoyé avec succès!</h3>
+                <p id="successMessage">Nous vous contacterons dans les plus brefs délais.</p>
+                <button class="btn" id="closeSuccessModal">Fermer</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/fr.js"></script>
+    <script src="scripts.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>

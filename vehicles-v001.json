@@ -1,0 +1,32 @@
+{
+    "id": "v001",
+    "make": "Toyota",
+    "model": "RAV4",
+    "year": 2020,
+    "price": 28500,
+    "mileage": 45000,
+    "fuel": "Essence",
+    "transmission": "Automatique",
+    "type": "SUV",
+    "color": "Blanc nacré",
+    "status": "Occasion vérifiée",
+    "description": "Toyota RAV4 2020 en excellent état, entretien à jour, carrosserie sans accident. Véhicule spacieux et confortable, idéal pour les familles ou les longs trajets.",
+    "features": [
+        "Système de navigation",
+        "Caméra de recul",
+        "Régulateur de vitesse",
+        "Toit panoramique",
+        "Sièges en cuir",
+        "Climatisation automatique",
+        "Système audio premium",
+        "Aide au stationnement",
+        "Feux LED",
+        "Volant multifonction"
+    ],
+    "images": [
+        "images/vehicles/toyota-rav4-1.jpg",
+        "images/vehicles/toyota-rav4-2.jpg",
+        "images/vehicles/toyota-rav4-3.jpg",
+        "images/vehicles/toyota-rav4-4.jpg"
+    ]
+}

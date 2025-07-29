@@ -1,0 +1,54 @@
+[
+    {
+        "id": "p001",
+        "name": "Plaquettes de frein avant",
+        "reference": "BRK-TOY-2020",
+        "brand": "Brembo",
+        "compatibility": "Toyota RAV4 2019-2022",
+        "price": 89.99,
+        "condition": "Neuf",
+        "stock": 15,
+        "category": "freinage",
+        "image": "images/pieces/plaquettes-frein.jpg",
+        "dateAdded": "2023-06-15"
+    },
+    {
+        "id": "p002",
+        "name": "Filtre à air",
+        "reference": "FIL-AIR-MERC",
+        "brand": "Mann-Filter",
+        "compatibility": "Mercedes Classe C 2018-2023",
+        "price": 32.50,
+        "condition": "Neuf",
+        "stock": 28,
+        "category": "moteur",
+        "image": "images/pieces/filtre-air.jpg",
+        "dateAdded": "2023-07-01"
+    },
+    {
+        "id": "p003",
+        "name": "Rétroviseur gauche",
+        "reference": "MIR-L-BMWX5",
+        "brand": "BMW Original",
+        "compatibility": "BMW X5 2020-2023",
+        "price": 175.00,
+        "condition": "Neuf",
+        "stock": 3,
+        "category": "carrosserie",
+        "image": "images/pieces/retroviseur.jpg",
+        "dateAdded": "2023-05-22"
+    },
+    {
+        "id": "p004",
+        "name": "Kit chaîne de distribution",
+        "reference": "CHN-AUDI-20T",
+        "brand": "Continental",
+        "compatibility": "Audi A4 2.0T 2016-2021",
+        "price": 220.00,
+        "condition": "Neuf",
+        "stock": 8,
+        "category": "moteur",
+        "image": "images/pieces/kit-distribution.jpg",
+        "dateAdded": "2023-04-10"
+    }
+]

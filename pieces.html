@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+      <link rel="stylesheet" href="css/styles.css">
+    <!-- Même head que index.html -->
+</head>
+<body>
+    <header>
+        <!-- Même header que index.html -->
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Pièces Détachées & Accessoires</h1>
+            <p>Pièces d'origine et accessoires de qualité pour votre véhicule</p>
+        </div>
+    </section>
+
+    <section class="piece-search">
+        <div class="container">
+            <form id="pieceSearchForm">
+                <div class="search-bar">
+                    <input type="text" id="pieceSearchInput" placeholder="Rechercher une pièce par référence, marque ou modèle...">
+                    <button type="submit" class="btn"><i class="fas fa-search"></i> Rechercher</button>
+                </div>
+                <div class="search-filters">
+                    <div class="filter-group">
+                        <label for="pieceCategory">Catégorie</label>
+                        <select id="pieceCategory">
+                            <option value="all">Toutes catégories</option>
+                            <option value="moteur">Moteur</option>
+                            <option value="freinage">Freinage</option>
+                            <option value="suspension">Suspension</option>
+                            <option value="carrosserie">Carrosserie</option>
+                            <option value="electrique">Électrique</option>
+                            <option value="accessoire">Accessoire</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="pieceBrand">Marque véhicule</label>
+                        <select id="pieceBrand">
+                            <option value="all">Toutes marques</option>
+                            <option value="toyota">Toyota</option>
+                            <option value="mercedes">Mercedes</option>
+                            <option value="bmw">BMW</option>
+                            <option value="audi">Audi</option>
+                            <option value="landrover">Land Rover</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="pieceCondition">État</label>
+                        <select id="pieceCondition">
+                            <option value="all">Neuf et occasion</option>
+                            <option value="neuf">Neuf</option>
+                            <option value="occasion">Occasion</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="piece-categories">
+        <div class="container">
+            <h2>Catégories Populaires</h2>
+            <div class="categories-grid">
+                <a href="pieces.html?category=moteur" class="category-card">
+                    <img src="images/category-engine.jpg" alt="Pièces moteur">
+                    <h3>Pièces Moteur</h3>
+                </a>
+                <a href="pieces.html?category=freinage" class="category-card">
+                    <img src="images/category-brakes.jpg" alt="Système de freinage">
+                    <h3>Freinage</h3>
+                </a>
+                <a href="pieces.html?category=suspension" class="category-card">
+                    <img src="images/category-suspension.jpg" alt="Suspension">
+                    <h3>Suspension</h3>
+                </a>
+                <a href="pieces.html?category=electrique" class="category-card">
+                    <img src="images/category-electrical.jpg" alt="Système électrique">
+                    <h3>Électrique</h3>
+                </a>
+                <a href="pieces.html?category=carrosserie" class="category-card">
+                    <img src="images/category-body.jpg" alt="Carrosserie">
+                    <h3>Carrosserie</h3>
+                </a>
+                <a href="pieces.html?category=accessoire" class="category-card">
+                    <img src="images/category-accessories.jpg" alt="Accessoires">
+                    <h3>Accessoires</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="piece-list">
+        <div class="container">
+            <div class="list-header">
+                <h2>Nos Pièces</h2>
+                <div class="sort-options">
+                    <span>Trier par:</span>
+                    <select id="pieceSort">
+                        <option value="date-desc">Plus récents</option>
+                        <option value="price-asc">Prix croissant</option>
+                        <option value="price-desc">Prix décroissant</option>
+                        <option value="name-asc">Nom (A-Z)</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="pieces-grid" id="piecesGrid">
+                <!-- Les pièces seront chargés dynamiquement via JS -->
+            </div>
+            
+            <div class="pagination">
+                <button class="btn-pagination prev" disabled><i class="fas fa-chevron-left"></i> Précédent</button>
+                <div class="page-numbers">
+                    <span class="active">1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>...</span>
+                    <span>8</span>
+                </div>
+                <button class="btn-pagination next">Suivant <i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="piece-cta">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-text">
+                    <h3>Vous ne trouvez pas la pièce qu'il vous faut?</h3>
+                    <p>Notre équipe peut vous aider à trouver des pièces rares ou spécifiques.</p>
+                </div>
+                <div class="cta-btns">
+                    <a href="contact.html#demande-pieces" class="btn">Demander une pièce</a>
+                    <a href="tel:+243844245180" class="btn btn-secondary"><i class="fas fa-phone"></i> Assistance technique</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <!-- Même footer que index.html -->
+    </footer>
+
+    <!-- Piece Modal -->
+    <div class="modal" id="pieceModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body" id="modalPieceContent">
+                <!-- Contenu chargé dynamiquement -->
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+    <script src="pieces.js"></script>
+</body>
+</html>

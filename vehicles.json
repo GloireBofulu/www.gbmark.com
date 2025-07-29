@@ -1,0 +1,62 @@
+[
+    {
+        "id": "v001",
+        "make": "Toyota",
+        "model": "RAV4",
+        "year": 2020,
+        "price": 28500,
+        "mileage": 45000,
+        "fuel": "Essence",
+        "transmission": "Automatique",
+        "type": "suv",
+        "color": "Blanc",
+        "status": "Occasion",
+        "image": "images/vehicles/toyota-rav4.jpg",
+        "dateAdded": "2023-05-15"
+    },
+    {
+        "id": "v002",
+        "make": "Mercedes",
+        "model": "Classe C",
+        "year": 2022,
+        "price": 48500,
+        "mileage": 12000,
+        "fuel": "Diesel",
+        "transmission": "Automatique",
+        "type": "voiture",
+        "color": "Noir",
+        "status": "Occasion",
+        "image": "images/vehicles/mercedes-classe-c.jpg",
+        "dateAdded": "2023-06-20"
+    },
+    {
+        "id": "v003",
+        "make": "BMW",
+        "model": "X5",
+        "year": 2023,
+        "price": 75000,
+        "mileage": 0,
+        "fuel": "Essence",
+        "transmission": "Automatique",
+        "type": "suv",
+        "color": "Bleu",
+        "status": "Neuf",
+        "image": "images/vehicles/bmw-x5.jpg",
+        "dateAdded": "2023-07-10"
+    },
+    {
+        "id": "v004",
+        "make": "Audi",
+        "model": "A4",
+        "year": 2021,
+        "price": 38000,
+        "mileage": 30000,
+        "fuel": "Essence",
+        "transmission": "Automatique",
+        "type": "voiture",
+        "color": "Gris",
+        "status": "Occasion",
+        "image": "images/vehicles/audi-a4.jpg",
+        "dateAdded": "2023-04-05"
+    }
+]

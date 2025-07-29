@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+      <link rel="stylesheet" href="css/styles.css">
+    <!-- Même head que index.html -->
+</head>
+<body>
+    <header>
+        <!-- Même header que index.html -->
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Nos Véhicules</h1>
+            <p>Découvrez notre sélection de véhicules neufs et d'occasion</p>
+        </div>
+    </section>
+
+    <section class="vehicle-filter">
+        <div class="container">
+            <form id="vehicleFilterForm">
+                <div class="filter-group">
+                    <label for="vehicleType">Type de véhicule</label>
+                    <select id="vehicleType">
+                        <option value="all">Tous les types</option>
+                        <option value="voiture">Voiture</option>
+                        <option value="suv">SUV/4x4</option>
+                        <option value="utilitaire">Utilitaire</option>
+                        <option value="luxe">Véhicule de luxe</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="vehicleStatus">État</label>
+                    <select id="vehicleStatus">
+                        <option value="all">Neuf et occasion</option>
+                        <option value="neuf">Neuf</option>
+                        <option value="occasion">Occasion</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="vehicleBrand">Marque</label>
+                    <select id="vehicleBrand">
+                        <option value="all">Toutes marques</option>
+                        <option value="toyota">Toyota</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="bmw">BMW</option>
+                        <option value="audi">Audi</option>
+                        <option value="landrover">Land Rover</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="priceRange">Prix max</label>
+                    <select id="priceRange">
+                        <option value="all">Tous prix</option>
+                        <option value="10000">10,000 $</option>
+                        <option value="20000">20,000 $</option>
+                        <option value="30000">30,000 $</option>
+                        <option value="50000">50,000 $</option>
+                        <option value="100000">100,000 $</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn">Filtrer</button>
+                <button type="reset" class="btn btn-secondary">Réinitialiser</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="vehicle-list">
+        <div class="container">
+            <div class="sort-options">
+                <span>Trier par:</span>
+                <select id="vehicleSort">
+                    <option value="date-desc">Plus récents</option>
+                    <option value="date-asc">Plus anciens</option>
+                    <option value="price-asc">Prix croissant</option>
+                    <option value="price-desc">Prix décroissant</option>
+                    <option value="mileage-asc">Kilométrage croissant</option>
+                </select>
+            </div>
+            
+            <div class="vehicles-grid" id="vehiclesGrid">
+                <!-- Les véhicules seront chargés dynamiquement via JS -->
+            </div>
+            
+            <div class="pagination">
+                <button class="btn-pagination prev" disabled><i class="fas fa-chevron-left"></i> Précédent</button>
+                <div class="page-numbers">
+                    <span class="active">1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>...</span>
+                    <span>8</span>
+                </div>
+                <button class="btn-pagination next">Suivant <i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="vehicle-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h3>Vous ne trouvez pas le véhicule qu'il vous faut?</h3>
+                <p>Nous pouvons vous aider à trouver le véhicule parfait selon vos critères spécifiques.</p>
+                <div class="cta-btns">
+                    <a href="contact.html#demande-speciale" class="btn">Demande spéciale</a>
+                    <a href="tel:+243844245180" class="btn btn-secondary"><i class="fas fa-phone"></i> Nous appeler</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <!-- Même footer que index.html -->
+    </footer>
+
+    <!-- Vehicle Modal -->
+    <div class="modal" id="vehicleModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body" id="modalVehicleContent">
+                <!-- Contenu chargé dynamiquement -->
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+    <script src="vehicles.js"></script>
+</body>
+</html>

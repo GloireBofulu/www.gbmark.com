@@ -1,0 +1,25 @@
+{
+    "id": "p001",
+    "name": "Plaquettes de frein avant",
+    "reference": "BRK-TOY-2020",
+    "brand": "Brembo",
+    "compatibility": "Toyota RAV4 2019-2022",
+    "price": 89.99,
+    "condition": "Neuf d'origine",
+    "stock": 15,
+    "deliveryTime": "2-3 jours",
+    "category": "freinage",
+    "description": "Plaquettes de frein avant de haute qualité pour Toyota RAV4. Fabriquées par Brembo, un leader mondial des systèmes de freinage. Ces plaquettes offrent une excellente performance de freinage et une longue durée de vie.",
+    "specs": [
+        { "name": "Matériau", "value": "Céramique" },
+        { "name": "Poids", "value": "1.2 kg" },
+        { "name": "Garantie", "value": "2 ans" },
+        { "name": "Type de véhicule", "value": "SUV" },
+        { "name": "Normes", "value": "ISO 9001, ECE R90" }
+    ],
+    "images": [
+        "images/pieces/plaquettes-frein-1.jpg",
+        "images/pieces/plaquettes-frein-2.jpg",
+        "images/pieces/plaquettes-frein-3.jpg"
+    ]
+}
